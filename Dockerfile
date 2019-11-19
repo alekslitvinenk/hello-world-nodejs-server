@@ -13,6 +13,6 @@ COPY scripts .
 RUN apk add --no-cache nodejs bash && \
     chmod -R 777 ${APP_INSTALL_PATH}
 
-EXPOSE 3000/tcp
+EXPOSE 8080/tcp
 
 ENTRYPOINT [ "./start.sh" ]
